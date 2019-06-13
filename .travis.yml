@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - stable
 
-after_sucess:
+after_success:
   - ./trigger_travis.sh --pro Mythie generate-resume $TRAVIS_ACCESS_TOKEN
 env:
   global:
