@@ -7,7 +7,8 @@
   </div>
 </template>
 
-<script>import ExperienceItem from '@/components/resume-content/ExperienceItem.vue';
+<script>
+import ExperienceItem from '@/components/resume-content/ExperienceItem.vue';
 
 export default {
   components: {
