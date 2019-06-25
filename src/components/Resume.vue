@@ -66,7 +66,7 @@ export default {
     margin-bottom: 25px;
 
     @media print {
-      padding-bottom: 15pt;
+      padding-bottom: 10pt;
     }
   }
 </style>
