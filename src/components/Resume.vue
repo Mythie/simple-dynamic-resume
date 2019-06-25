@@ -63,10 +63,10 @@ export default {
   }
 
   .spacer {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     @media print {
-      margin-bottom: 7pt;
+      padding-bottom: 15pt;
     }
   }
 </style>

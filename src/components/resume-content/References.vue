@@ -1,12 +1,12 @@
 <template>
-  <div class="references">
+  <div class="references page-breakable">
     <h2>My References</h2>
     <hr class="horizontal-rule-color">
 
     <div
       v-for="(items, i) in rows"
       :key="i"
-      class="row page-breakable"
+      class="row"
     >
       <ReferenceItem
         v-for="(item, index) in items"

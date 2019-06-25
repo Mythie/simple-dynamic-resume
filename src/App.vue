@@ -94,7 +94,7 @@ export default {
 .break-page {
   @media print {
     page-break-before: always !important;
-    margin-top: 20pt;
+    margin-top: 20pt !important;
   }
 }
 
