@@ -2,7 +2,6 @@
   <div class="references">
     <h2>My References</h2>
     <hr class="horizontal-rule-color">
-    <div class="page-breakable" />
 
     <div
       v-for="(items, i) in rows"
