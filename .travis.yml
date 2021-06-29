@@ -3,12 +3,12 @@ node_js:
 - stable
 
 before_install:
+  - sudo apt-get update -y
   - sudo apt-get -y install build-essential
-addons:
-  apt:
-    update: true
+
 after_success:
 - "./trigger_travis.sh --pro Mythie generate-resume $TRAVIS_ACCESS_TOKEN"
+
 env:
   global:
     - secure: LW08nSJmwx5YtITwe4F6BGqHxa7T0DN826xrOmO5ptuEE6Lc47tAakMU8TYoIg3MJDU8HWHsVa1YJjDNYVNtZp3dwGoZ6MqcGphtGTIkz/o8jOltmBTeaDuYnHbhyyU3Uj4PZgvi816VdazKOBC/TtQGb5XZoHvl+WtS/DMNRIWIK5J/tBwkwVs72FAUeUoS71sryacYa5N2Fev2Ji9ummcQ3YKws/bB6cHd4MT95zJMlcrHdJklSFmcEzrk24vugvaDdl3H90xOddO9/Bpig0yTPbyFaO17GiqrcEmwHtPhMRA8Zik57B7O3/XABVMxktW0qkpcFBAXZgxXc9ukjha6Ce55XV8aP18SUmQnOaK7CnT/7GYCd97560UJOx4wDdhbBbkN9CRs2Vz5dAiPFoRu9FSQo0GuIcgslMARhfGB4dtQ/+n3iR22UG82tJAjz5wnlBmkwm0JB4jypRRJ6mpo+ioT7AWb2wWA6rFDuFSwTHEr9pjnZutxxt1iacsj4exaeZOnNTwEkSfVG9eiBiL/oPEpgxSZdDG2PJdmUDpx1oiOpZHVvciG2Lpt6ZTXKZrSkJBri2+k1eghVW0a+pSCkFxHaR/spw/LkRz9mDeXfhq7V34oBXILxkpVtNSlOy0uQy/d7Z09Wazj2L3LngKm0XNP6gJSrvtHDEzUY8I=
