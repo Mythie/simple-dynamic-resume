@@ -6,8 +6,9 @@
     <p
       v-if="item.paragraph && item.paragraph.length > 0"
       class="education-description"
+      v-html="item.paragraph.replace(/\n/g, '<br />')"
+
     >
-      {{ item.paragraph }}
     </p>
     <div
       v-if="item.achievementList && item.achievementList.length > 0"
